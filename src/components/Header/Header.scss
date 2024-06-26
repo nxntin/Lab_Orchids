@@ -1,0 +1,112 @@
+.header {
+    .top-bar {
+        background-color: #992d60;
+        color: white;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .main-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        padding: 10px 20px;
+        .logo {
+            display: flex;
+            align-items: center;
+            img {
+                width: 50px;
+                margin-right: 10px;
+            }
+            h1 {
+                margin: 0;
+                font-size: 24px;
+                color: #992d60;
+            }
+            p {
+                margin: 0;
+                font-size: 12px;
+                color: gray;
+                &.since {
+                    color: #992d60;
+                }
+            }
+        }
+        .search-bar {
+            display: flex;
+            input {
+                padding: 5px;
+                background-color: #ff9bca;
+                border: 1px solid #d3d3d3;
+                border-radius: 3px 0 0 3px;
+            }
+
+        }
+        .user-options {
+            display: flex;
+            align-items: center;
+            .language-selector {
+                margin-right: 20px;
+                select {
+                    margin-left: 5px;
+                }
+            }
+            a {
+                margin: 0 10px;
+                color: #8A2454;
+                text-decoration: none;
+            }
+            .shopping-cart {
+                display: flex;
+                align-items: center;
+                i {
+                    font-size: 20px;
+                }
+                span {
+                    margin-left: 5px;
+                    font-size: 14px;
+                }
+            }
+            button {
+                background: none;
+                border: none;
+                color: #8A2454;
+                cursor: pointer;
+                margin-left: 20px;
+            }
+        }
+    }
+    .nav-bar {
+        background-color: #f8f8f8;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            &:hover {
+                background-color: #8A2454;
+                color: white;
+            }
+        }
+    }
+    &.light-theme {
+        background-color: white;
+        color: black;
+    }
+    &.dark-theme {
+        background-color: #333;
+        color: white;
+        .nav-bar {
+            background-color: #444;
+            a {
+                color: white;
+                &:hover {
+                    background-color: white;
+                    color: #8A2454;
+                }
+            }
+        }
+    }
+}

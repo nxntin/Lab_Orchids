@@ -1,0 +1,68 @@
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Đảm bảo chiều cao bằng với chiều cao của viewport */
+    background-color: rgb(255, 255, 255); /* Thay đổi màu nền của trang */
+    transform: scale(0.7);
+}
+.image {
+    width: 100px;
+    height: 100px;
+}
+.contact-page {
+    background-color: white; /* Thay đổi nền thành màu trắng */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center; /* Canh giữa văn bản */
+    font-family: Arial, sans-serif; /* Đặt font chữ */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black; /* Thay đổi màu chữ thành đen */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black; /* Thay đổi màu chữ thành đen */
+    margin-bottom: 10px;
+}
+
+.address, .opening-hours {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+
+button {
+    background-color: #8bc34a; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #7cb342; /* Màu nền của nút khi hover */
+}
